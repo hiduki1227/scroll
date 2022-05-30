@@ -6,13 +6,13 @@ function onclick_btn() {
     var url
 
 
-    if (urL.length ==! 0 & maiN.length ==! 0) {
+    if (urL.length >= 0 & maiN > ) {
         console.log("TRUE");
         url = mus + maiN + " site:" + urL + "&tbm=isch";
         open(url, "_blank");
     }
 
-    else if (urL.length === 0) {
+    else if (urL.length === 0 & maiN >= 0) {
         console.log("FALSE");
         url = mus + maiN + " site:http://moeimg.net" + " \"微エロ\"" + "&tbm=isch";
         open(url, "_blank");
