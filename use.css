@@ -1,0 +1,14 @@
+.title {
+    margin-left: 300px;
+    margin-right: 300px;
+    border-left: solid black 3px;
+    border-bottom: solid black 4px;
+    border-radius: 2px;
+}
+
+.text {
+    word-wrap: break-word;
+    margin-left: 340px;
+    margin-right: 340px;
+    font-size: 30px;
+}

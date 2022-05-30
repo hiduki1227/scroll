@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Scroll</title>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Search for Detail</title>
         <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
     <body>
-        <main>
-            <div class="container">
-                <div class="imp"><marquee direction="left" scrolldelay="80" truespeed>琉球バス 系統番号90番 知花線上り</marquee></div>
-                <div class="blink">多分到着</div>
+        <div class="container">
+            <h1 class="logo">Search for Detail</h1>
+            <div class="ipts">
+                キーワード<br>
+                <input type="text" id="main" placeholder="Search Word"><br>
+                URL 設定<br>
+                <input type="url" id="url" placeholder="URL" autocomplete="url"><br>
+                <button class="submit" type="submit" onclick="onclick_btn()">Search</button>
             </div>
-        </main>
+        </div>
+        <footer>
+            <h1 class="m_txt">
+                <a href="use.html" style="color: red;">How To?</a><br>
+                <small>↑別ページへ遷移します。↑</small>
+            </h1>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>

@@ -1,0 +1,44 @@
+.container {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
+    word-wrap: break-word;
+}
+
+.logo {
+    font-size: 90px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.ipts {
+    font-size: 33px;
+    text-align: center;
+}.ipts > input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.submit {
+    background-color:dodgerblue;
+    color: white;
+    border: none;
+    font-size: 33px;
+}
+
+.m_txt {
+    text-align: center;
+    font-size: 45px;
+    color: darkslategray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+small {
+    font-size: 20px;
+    color: gray;
+}
