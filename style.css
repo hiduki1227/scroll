@@ -83,6 +83,7 @@ small {
 
     .ipts {
         font-size: 28px;
+        text-align: center;
     }.ipts > input {
         margin-top: 15px;
         margin-bottom: 15px;
