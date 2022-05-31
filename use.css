@@ -1,14 +1,45 @@
 .title {
-    margin-left: 300px;
-    margin-right: 300px;
     border-left: solid black 3px;
     border-bottom: solid black 4px;
     border-radius: 2px;
 }
 
-.text {
-    word-wrap: break-word;
-    margin-left: 340px;
-    margin-right: 340px;
-    font-size: 30px;
+@media screen and (min-width: 1000px) {
+    .title {
+        margin-left: 120px;
+        margin-right: 120px;
+        font-size: 40px;
+    }
+    
+    .text {
+        word-wrap: break-word;
+        margin-left: 170px;
+        margin-right: 170px;
+        font-size: 25px;
+    }
+    
+    section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }    
+}
+
+
+@media screen and (max-width: 480px) {
+    .title {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 24px;
+    }
+
+    .text {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+
+    section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
