@@ -6,7 +6,7 @@ function onclick_btn() {
     var url
 
 
-    if (urL.length >= 0 & maiN > ) {
+    if (urL.length >= 0 & maiN >= 0) {
         console.log("TRUE");
         url = mus + maiN + " site:" + urL + "&tbm=isch";
         open(url, "_blank");
