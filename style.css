@@ -30,6 +30,7 @@ a {
 
 .container {
     word-wrap: break-word;
+    text-align: center;
 }
 
 .ipts {
@@ -128,13 +129,14 @@ small {
 /* スマホ用レイアウト */
 @media screen and (max-width: 490px) {
     .version {
-        font-size: 1    0px;
+        font-size: 10px;
     }
 
     .container {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
         margin-top: 20px;
+        text-align: center;
         word-wrap: break-word;
     }
 
