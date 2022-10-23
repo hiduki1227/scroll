@@ -41,7 +41,7 @@ table > th, td {
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 490px) {
     .logo {
         font-size: 65px;
     }

@@ -126,7 +126,7 @@ small {
 }
 
 /* スマホ用レイアウト */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 490px) {
     .version {
         font-size: 1    0px;
     }
@@ -139,7 +139,7 @@ small {
     }
 
     .logo {
-        font-size: 48px;
+        font-size: 35px;
     }
 
     .ipts {
@@ -148,7 +148,8 @@ small {
     }.ipts > input {
         margin-top: 15px;
         margin-bottom: 15px;
-        font-size: 28px;
+        width: 85%;
+        font-size: 23px;
     }
 
     .submit {
@@ -156,6 +157,10 @@ small {
     }
     
     .m_txt {
-        font-size: 28px;
+        font-size: 30px;
+    }
+
+    small {
+        font-size: 15px;
     }
 }
