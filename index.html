@@ -7,22 +7,25 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
     <body>
-        Ver 2.0 正規版
+        <span class="version">Version 2.5</span>
         <div class="container">
             <h1 class="logo">Search for Detail</h1>
             <div class="ipts">
-                キーワード<br>
-                <input type="text" id="main" placeholder="Search Word"><br>
-                URL 設定<br>
+                <span>Set URL</span><br>
                 <input type="url" id="url" placeholder="URL" autocomplete="url"><br>
+                <span>Keywords</span><br>
+                <input type="text" id="main" placeholder="Search Word"><br>
+                <span>Image Size</span><br>
+                <input type="number" id="width" placeholder="Image-Width"><br>
+                <input type="number" id="height" placeholder="Image-Height"><br>
                 <button class="submit" type="submit" onclick="clb()">Search</button>
             </div>
         </div>
         <footer>
-            <h1 class="m_txt">
-                <a href="use.html" style="color: red;">How To?</a><br>
-                <small>↑別ページへ遷移します。↑</small>
-            </h1>
+            <div class="m_txt">
+                <a href="use.html">How To</a><br>
+                <small>↑別ページへ移動します。↑</small>
+            </div>
         </footer>
         <script src="script.js"></script>
     </body>

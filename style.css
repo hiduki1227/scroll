@@ -1,12 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200&family=Rajdhani:wght@300&family=Zen+Kurenaido&display=swap');
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.version::after {
+    content: "New version";
+    color: red;
+    font-family: serif;
+    font-size: 85%;
+    padding-left: 10px;
+}
+
 .submit {
-    background-color: dodgerblue;
-    color: white;
-    border: none;
+    border: dashed dodgerblue 2px;
+    color: green;
+    font-family: 'Cairo Play', cursive;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .logo {
     font-weight: normal;
     text-align: center;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .container {
@@ -16,22 +35,30 @@
 .ipts {
     text-align: center;
 }
+.ipts > span, input {
+    font-family: 'Cairo Play', cursive;
+}
 
-a {
-    text-decoration: none;
-    color: black;
+footer {
+    font-family: 'Zen Kurenaido', sans-serif;
+    margin-top: 25px;
 }
 
 .m_txt {
     text-align: center;
-    color: darkslategray;
+}
+.m_txt > a {
+    border-bottom: solid dodgerblue 2px;
+    cursor: pointer;
 }
 
 small {
     color: gray;
 }
 
-@media screen and (min-width: 480px) {
+
+/* パソコン用レイアウト */
+@media screen and (min-width: 790px) {
     .container {
         margin-left: 50px;
         margin-right: 50px;
@@ -40,7 +67,6 @@ small {
     
     .logo {
         font-size: 100px;
-        font-weight: bold;
     }
     
     .ipts {
@@ -56,8 +82,6 @@ small {
     }
     
     .m_txt {
-        text-align: center;
-        color: darkslategray;
         font-size: 45px;
     }
     
@@ -67,8 +91,46 @@ small {
     }    
 }
 
+/* 最大幅が790 */
+@media screen and (max-width: 790px) {
+        .container {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 100px;
+    }
+    
+    .logo {
+        font-size: 65px;
+    }
+    
+    .ipts {
+        font-size: 43px;
+    }.ipts > input {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    
+    .submit {
+        font-size: 33px;
+    }
+    
+    .m_txt {
+        font-size: 50px;
+    }
+    
+    
+    small {
+        font-size: 25px;
+    }    
+}
 
-@media screen and (max-width: 480px) {
+/* スマホ用レイアウト */
+@media screen and (max-width: 550px) {
+    .version {
+        font-size: 1    0px;
+    }
+
     .container {
         margin-left: 15px;
         margin-right: 15px;
@@ -77,12 +139,11 @@ small {
     }
 
     .logo {
-        font-size: 33px;
-        font-weight: 900;
+        font-size: 48px;
     }
 
     .ipts {
-        font-size: 28px;
+        font-size: 33px;
         text-align: center;
     }.ipts > input {
         margin-top: 15px;
@@ -91,10 +152,10 @@ small {
     }
 
     .submit {
-        font-size: 40px;
+        font-size: 25px;
     }
     
-    small {
-        font-size: 20px;
+    .m_txt {
+        font-size: 28px;
     }
 }
