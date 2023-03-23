@@ -13,19 +13,21 @@
             <section>
                 <h1 class="title">検索条件の設定</h1>
                 <div class="text">
-                    このウェブアプリは条件指定をしたウェブ検索が可能なアプリです。<br>
+                    このウェブアプリは条件指定をしたウェブ検索が可能なアプリです。<br><br>
                     Set URLに検索したいサイトのURLを入力、または<br>
                     <ul>
-                        <li>d => デフォルトモード(<a href="http://moeimg.net">http://moeimg.net</a>から画像を検索)</li>
-                        <li>k => 過激モード(<a href="http://moeimg.net">http://moeimg.net</a>から過激な画像をできるだけ検索)</li>
-                        <li>gimg => GoogleIMGモード(<a href="https://www.google.com">https://www.google.com</a>から画像を検索)</li>
-                        <li>何も入力しない => 非エロ、微エロモード(<a href="http://moeimg.net">http://moeimg.net</a>から非エロ、微エロな画像をできるだけ検索)</li>
+                        <li>d => デフォルトモード(<a href="http://moeimg.net">moeimg.net</a>から画像を検索)</li>
+                        <li>k => 過激モード(<a href="http://moeimg.net">moeimg.net</a>から過激な画像を低精度で検索)</li>
+                        <li>g => Google画像検索モード(<a href="https://www.google.com">google.com</a>から画像を低精度で検索)</li>
+                        <li>入力なし => 非エロ、微エロモード(<a href="http://moeimg.net">moeimg.net</a>から非エロ、微エロな画像を低精度で検索)</li>
                     </ul>
-                        Keywordsには、検索したいキーワードを入力してください。<br>
-                        Image Sizeという項目には画像サイズを指定したい場合にお使いください。入力しない場合は画像サイズを指定しないで検索します。<br><br>
+                        Keywordsには、検索したいキーワードを入力してください。<br><br>
+                        Pixelには指定したい画像の画素数を入力してください。入力された値以上の画素数の画像を検索します。未入力の場合は指定なしとして検索されます。<br>
+                        また，入力された値が <b>"1未満，整数以外，負数"</b> の場合は，自動的補正され，に指定なしとして検索されます。<b>21以上の値が入力された場合</b>も自動で20に補正されます。<br><br>
+                        Image Sizeという項目には画像サイズを指定したい場合にお使いください。入力がない場合は画像サイズ未指定で検索します。<br><br>
                         <table>
                             <tr><th colspan="3">解像度比較表</th></tr>
-                            <tr><th>名称</th><th>横x縦(px)</th><th>比率</th></tr>
+                            <tr><th>名称</th><th>(px)</th><th>比率</th></tr>
                             <tr><td>VGA</td><td>640x480</td><td>4:3</td></tr>
                             <tr><td>SVGA</td><td>800x600</td><td>4:3</td></tr>
                             <tr><td>HDTV</td><td>1280x720</td><td>16:9</td></tr>
@@ -39,22 +41,37 @@
                 </div>
             </section>
             <section>
-                <h1 class="title">バージョン変更情報</h1>
+                <h1 class="title">更新履歴</h1>
                 <div class="text">
-                    2022/05/11 Ver 1.5<br>
+
+                    <!-- バージョン変更情報 -->
+                    2022/05/11 Ver 1.5.0<br>
                     <ul>
-                        <li>条件つ検索を実装</li>
-                        <li>画像の過激度を設定を実装</li>
-                        <li>URL指定を実装</li>
+                        <li>条件検索を実装</li>
+                        <li>画像の過激度の指定を実装</li>
+                        <li>URLを指定して検索を実装</li>
                     </ul>
+
                     <hr>
-                    2022/10/23 Ver 2.5<br>
+                    2022/10/23 Ver 1.5.1<br>
                     <ul>
-                        <li>デザインの変更</li>
-                        <li>バグを改善</li>
+                        <li>デザインの一部を変更</li>
+                        <li>バグの一部を修正</li>
                         <li>画像のサイズ指定を実装</li>
-                        <li>URL指定に新たな引数を追加</li>
                     </ul>
+
+                    <hr>
+                    2023/03/24 Ver 2.0.0<br>
+                    <ul>
+                        <li>デザインの一部を変更</li>
+                        <li>検索ボタンの挙動を変更</li>
+                        <li>画像の画素数指定を実装</li>
+                        <li>画像サイズ未指定時の動作を変更</li>
+                        <li>検索バグを修正</li>
+                        <li>プログラムの最適化</li>
+                    </ul>
+
+
                 </div>
             </section>
             <section>
