@@ -15,8 +15,9 @@ function clb() {
 
     // 画像の横と縦の長さを指定。
     function img(iw, ih) {
+        var ImgSz = "";
         if (iw.length > 0 && ih.length > 0) {
-            var ImgSz = " imagesize:" + iw + "x" + ih;
+            ImgSz = " imagesize:" + iw + "x" + ih;
         }
         else {
             // pass
@@ -34,7 +35,7 @@ function clb() {
             }else {
                 iP = "20";
             }
-            px = "&tbs=isz:lt,islt:" + iP;
+            px = "&tbs=isz:lt,islt:" + iP + "mp";
         } else {
             px = "";
         }
@@ -43,7 +44,7 @@ function clb() {
 
 
     // 画像のキーワード設定
-    if (maiN.length > 0 && urL.length > 0 && urL != "k" && urL != "d" && urL != "gimg") {
+    if (maiN.length > 0 && urL.length > 0 && urL != "k" && urL != "d" && urL != "g") {
         console.log("キーワード：TRUE\nURL設定：TRUE");
         url = mus + maiN + " site:" + urL + img(img_w, img_h) + Ipx(img_Px);
         open(url, "_blank");
