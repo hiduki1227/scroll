@@ -16,6 +16,10 @@ table > th, td {
     padding-right: 25px;
 }
 
+.no_support {
+    color: lightgray;
+}
+
 .title {
     margin-left: 10px;
     margin-right: 10px;
